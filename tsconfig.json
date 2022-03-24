@@ -11,7 +11,7 @@
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
     "skipLibCheck": true, // 忽略声明文件 *.d.ts 类型检查 例如一些第三方库
-    "baseUrl": "./", // 配置非相对导入路径 
+    "baseUrl": "./", // 配置非相对导入路径
     "isolatedModules": true, // 将每个文件作为单独模块
     "types": ["vite/client"],
     "paths": {
@@ -19,8 +19,7 @@
       "views/*": ["src/views/*"],
       "components/*": ["src/components/*"],
       "assets/*": ["src/assets/*"]
-     }, // 相对于baseUrl进行解析，为了让ts编译解析对应路径，需要与alias配置地址同步
-     
+    } // 相对于baseUrl进行解析，为了让ts编译解析对应路径，需要与alias配置地址同步
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "exclude": ["node_modules", "dist"], // 配置不需要编译的文件范围
